@@ -1,0 +1,6 @@
+interface:
+  display_name: Engineering AI Dev Suite
+  short_description: 通用软件工程与 AI Agent 协作 skill，覆盖实现、诊断、审查、迁移、文档和 skill 设计。
+  default_prompt: 使用 Engineering AI Dev Suite 处理当前开发任务：先读项目规则和代码现状，再按任务类型选择工作流，完成实现、验证和交付结果。
+policy:
+  allow_implicit_invocation: true

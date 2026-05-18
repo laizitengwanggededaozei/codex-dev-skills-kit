@@ -1,0 +1,7 @@
+interface:
+  display_name: Codex Code Review
+  short_description: 代码、未提交修改、PR、SQL 和配置审查，问题优先输出。
+  default_prompt: 使用 Codex Code Review，review 当前未提交修改，只输出真正可能出问题的点。
+policy:
+  allow_implicit_invocation: true
+

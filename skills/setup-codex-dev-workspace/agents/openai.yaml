@@ -1,0 +1,6 @@
+interface:
+  display_name: Setup Codex Dev Workspace
+  short_description: 初始化项目或多仓库工作区的 AI 开发目录、规则和长期沉淀结构。
+  default_prompt: 使用 Setup Codex Dev Workspace，初始化当前项目，先检查再计划，不要覆盖已有文件。
+policy:
+  allow_implicit_invocation: true

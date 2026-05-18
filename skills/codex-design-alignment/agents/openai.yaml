@@ -1,0 +1,7 @@
+interface:
+  display_name: Codex Design Alignment
+  short_description: 需求、方案、架构和迁移前的对齐与追问。
+  default_prompt: 使用 Codex Design Alignment，帮我对齐这个方案，先查代码和文档，再问必须确认的问题。
+policy:
+  allow_implicit_invocation: true
+

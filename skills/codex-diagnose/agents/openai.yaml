@@ -1,0 +1,7 @@
+interface:
+  display_name: Codex Diagnose
+  short_description: 缺陷、测试失败、接口异常和错误数据的假设驱动诊断。
+  default_prompt: 使用 Codex Diagnose，先给可验证假设，确认根因后再修。
+policy:
+  allow_implicit_invocation: true
+

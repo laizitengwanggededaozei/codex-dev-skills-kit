@@ -1,0 +1,7 @@
+interface:
+  display_name: Codex Question Aligner
+  short_description: 把含糊自然语言快速整理成精确问题、决策点和下一句可执行提示。
+  default_prompt: 使用 Codex Question Aligner，帮我把这段话转换成精确问题和下一步提示。
+policy:
+  allow_implicit_invocation: true
+
