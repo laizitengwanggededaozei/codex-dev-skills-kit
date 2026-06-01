@@ -6,6 +6,14 @@
 - List related repositories or services here.
 - State production, staging, and local environment assumptions here.
 
+## Context Map
+
+- Keep this file as the entry summary and hard-rule document for Codex.
+- Keep full project facts in `docs/ai-dev/01_PROJECT_CONTEXT.md`.
+- Keep project-specific workflow and verification rules in `docs/ai-dev/02_WORKFLOW_RULES.md`.
+- Keep exploration handoffs, evidence paths, conflicts, and unknowns under `docs/ai-dev/60_交接记录/`.
+- Do not paste complete discovery logs or sub-agent raw output into this file.
+
 ## Default Workflow
 
 - Inspect existing code and docs before editing.

@@ -18,7 +18,11 @@ Recommended flow:
   1. Install skills with scripts/install.sh
   2. Open Codex inside the project
   3. Ask: 使用 Setup Codex Dev Workspace，初始化当前项目
-  4. Let Codex inspect the project before using this helper
+  4. Let Codex inspect the project and fill docs/ai-dev/01_PROJECT_CONTEXT.md
+     before coding
+
+This helper creates structure and templates only. It does not inspect or
+understand project-specific facts.
 EOF
 }
 
@@ -129,3 +133,5 @@ if [[ ${#skipped[@]} -gt 0 ]]; then
 fi
 
 echo "Project initialized at: $TARGET"
+echo "Structure initialized only."
+echo "Ask Codex to inspect the project and fill docs/ai-dev/01_PROJECT_CONTEXT.md before coding."
