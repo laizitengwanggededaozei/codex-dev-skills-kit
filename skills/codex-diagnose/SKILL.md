@@ -15,7 +15,8 @@ Diagnose before fixing.
 ## Workflow
 
 1. Capture the symptom and expected behavior.
-2. Find or create the fastest reliable reproduction signal.
+2. Find or create the fastest reliable reproduction signal before changing
+   product code.
 3. Confirm the failure matches the report.
 4. List 3-5 ranked hypotheses.
 5. For each hypothesis, state prediction and verification step.
@@ -34,6 +35,17 @@ Diagnose before fixing.
 - database query proving data shape
 - minimal command that fails before and passes after
 
+## Feedback Loop Gate
+
+The feedback signal is the gate for diagnosis. Do not move from investigation
+to implementation until there is a concrete pass/fail signal that can verify
+the reported symptom. If no reliable signal can be built, stop and report:
+
+- what was tried
+- why the signal is still missing
+- what artifact, environment access, or manual verification is needed
+- the safest next diagnostic step
+
 ## Output Shape
 
 ```text
@@ -51,6 +63,7 @@ Diagnose before fixing.
 
 ## Rules
 
+- Treat the reproduction or verification signal as the first deliverable.
 - Do not patch before at least one falsifiable hypothesis.
 - Do not scatter broad logs.
 - Do not change frontend and backend together unless ownership is proven.

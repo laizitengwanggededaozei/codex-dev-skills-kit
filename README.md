@@ -3,6 +3,21 @@
 一套可迁移的 Codex skills 与项目初始化模板，用于把 AI 辅助开发中的需求对齐、
 复杂任务流程、代码审查、故障诊断和交付记录沉淀成稳定的项目工作方式。
 
+## Origin
+
+This kit is inspired by and adapted from Matt Pocock's
+[`skills`](https://github.com/mattpocock/skills) project. The upstream project
+is licensed under the MIT License and promotes small, composable, adaptable
+agent skills for real engineering work.
+
+The bundled skills here are Codex-oriented adaptations rather than exact
+upstream copies. They add Codex trigger metadata, `AGENTS.md` conventions,
+Chinese collaboration templates, `docs/ai-dev/` delivery records, complex-task
+coding gates, and multi-repository workspace initialization.
+
+See [Third Party Notices](THIRD_PARTY_NOTICES.md) for attribution, license
+notice, and the local-to-upstream skill mapping.
+
 ## What Is Included
 
 | 模块 | 内容 |
@@ -97,6 +112,7 @@ ${CODEX_SKILLS_DIR:-${CODEX_HOME:-$HOME/.codex}/skills}
 - [开发交流规范](docs/开发交流规范.md)
 - [Codex CLI slash commands 中文指南](docs/Codex-CLI-slash-commands-中文指南.md)
 - [更新记录](docs/更新记录.md)
+- [Third Party Notices](THIRD_PARTY_NOTICES.md)
 
 ## Repository Notes
 

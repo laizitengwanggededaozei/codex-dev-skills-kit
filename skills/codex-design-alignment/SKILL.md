@@ -19,15 +19,18 @@ Align a plan before implementation.
 2. Restate the proposed goal and scope.
 3. Identify business terms, system boundaries, affected clients, data impact,
    permissions, deployment order, and rollback needs.
-4. Inspect code/docs for answers before asking the user.
-5. Ask one focused question at a time when a decision is blocked.
-6. If the user provides new facts or corrections while answering questions,
+4. Compare user terminology with code/docs terminology and surface conflicts.
+5. Inspect code/docs for answers before asking the user.
+6. Ask one focused question at a time when a decision is blocked.
+7. If the user provides new facts or corrections while answering questions,
    treat it as `未确认项澄清`: restate the updated understanding before moving on.
-7. Produce a decision-ready summary and a recommended next action.
+8. Produce a decision-ready summary and a recommended next action.
 
 ## Question Types
 
 - What business rule makes this necessary?
+- Which terms are canonical in code/docs, and where does the user's wording
+  conflict with them?
 - Which system owns the behavior?
 - Which clients or integrations are affected?
 - What data shape or API contract changes?
@@ -53,6 +56,8 @@ Align a plan before implementation.
 ## Rules
 
 - Do not implement until scope and ownership are clear.
+- When user terminology conflicts with existing code/docs, call out the
+  conflict and ask which term or behavior is authoritative.
 - Do not treat `确认方案`, `进入方案 C`, `继续`, `下一步`, or similar wording as
   permission to edit files.
 - The coding gate opens only when the user explicitly says `开始编码`,
