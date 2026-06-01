@@ -96,6 +96,7 @@ ${CODEX_SKILLS_DIR:-${CODEX_HOME:-$HOME/.codex}/skills}
 - [复杂任务标准流程](docs/复杂任务标准流程.md)
 - [开发交流规范](docs/开发交流规范.md)
 - [Codex CLI slash commands 中文指南](docs/Codex-CLI-slash-commands-中文指南.md)
+- [更新记录](docs/更新记录.md)
 
 ## Repository Notes
 
